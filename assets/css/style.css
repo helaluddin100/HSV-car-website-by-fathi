@@ -1,0 +1,409 @@
+/* banner================ */
+
+.banner {
+    background-image: url(../img/banner/banner.png);
+}
+
+h4.sm-title {
+    font-size: 23px;
+    color: var(--white-color);
+    font-family: var(--title-font);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+h1.title {
+    font-size: 52px;
+    color: var(--white-color);
+    font-family: var(--title-font);
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+.banner-content-wrapper {
+    height: 680px;
+    display: flex;
+    align-items: center;
+}
+
+.filter-tab-conten {
+    padding: 20px;
+}
+
+.filter-nav {
+    background-color: #f1f0f0 !important;
+    color: var(--text-color);
+    padding: 10px 30px;
+    border-radius: 0 !important;
+}
+
+.filter-nav.active {
+    background: var(--white-color) !important;
+    color: var(--text-color) !important;
+}
+
+.border-padding-less {
+    padding-left: 0;
+    border: 0;
+    font-weight: 800;
+}
+
+
+/* ========nice select arrow custom-=========== */
+
+.nice-select.cs-arrow:after {
+    content: '';
+    display: block;
+    height: 5px;
+    margin-top: -4px;
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    -webkit-transform-origin: 66% 66%;
+    -ms-transform-origin: 66% 66%;
+    transform-origin: 66% 66%;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(0deg);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    width: 10px;
+    background-image: url(../img/icon/down.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 10px;
+    border: none;
+}
+
+.banner-content {
+    width: 100%;
+}
+
+.form-submit-area {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.filter-form {
+    margin-top: 50px;
+}
+
+.se-border::after {
+    content: "";
+    border-left: 1px solid #ddd;
+    position: absolute;
+    left: 0;
+    display: block;
+    bottom: 10%;
+    top: 35%;
+    height: 35px;
+}
+
+.se-border {
+    position: relative;
+}
+
+.se-border::before {
+    content: "";
+    border-right: 1px solid #ddd;
+    position: absolute;
+    right: 0;
+    display: block;
+    bottom: 10%;
+    top: 35%;
+    height: 35px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.banner-home-expert {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.icon-text p {
+    margin-left: 15px;
+}
+
+.icon-text:first-child {
+    margin-right: 60px;
+}
+
+.dealer-section {
+    background-color: #F7F7F7;
+}
+
+
+/* ===============occasions============ */
+
+.occastion {
+    background-color: #F7F7F7;
+}
+
+.occastion-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-title h5 {
+    font-size: 20px;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.occassions-tab {
+    background: var(--white-color);
+}
+
+h2.occasion-title {
+    font-size: 44px;
+    line-height: 55px;
+    font-weight: 400;
+    color: #002A3A;
+    text-transform: uppercase;
+}
+
+.occassions-tab {
+    background: var(--white-color);
+}
+
+.occassion-nav button {
+    border: none;
+    background: none;
+    padding: 15px 25px;
+    border-bottom: 2px solid var(--white-color);
+    color: #868E96;
+}
+
+.occassion-nav button.active {
+    border-color: var(--main-color);
+    color: var(--text-color);
+}
+
+.occassion-nav button:hover {
+    color: var(--text-color);
+}
+
+.slider-img {
+    width: 100%;
+}
+
+.model-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-model {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-size: 25px;
+    color: var(--main-color);
+}
+
+p.model {
+    font-size: 24px;
+}
+
+.car-model span {
+    font-size: 12px;
+    font-family: var(--normal-font);
+    margin-left: 20px;
+}
+
+.service-details {
+    background: var(--white-color);
+    padding: 20px;
+}
+
+.mkb-details ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.mkb-details ul li {
+    margin-right: 25px;
+}
+
+p.ml-text {
+    font-size: 13px;
+}
+
+p.st-text {
+    font-size: 16px;
+}
+
+.car-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+
+/* =======================================Delear section design ========= */
+
+.dealer-product {
+    position: relative;
+}
+
+.dealer-contact {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-color);
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+    bottom: 0;
+}
+
+.dealer-product:hover .dealer-contact {
+    opacity: 1;
+    visibility: visible;
+}
+
+img.dealer-product-img {
+    width: 100%;
+}
+
+.dealer-contact-info h4 {
+    color: var(--white-color);
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.contact-btn {
+    color: var(--white-color);
+    font-size: 13px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dealer-contact-info {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-btn:hover {
+    color: var(--white-color);
+}
+
+.contact-btn img {
+    margin-left: 10px;
+}
+
+.info-inner {
+    text-align: center;
+}
+
+.dealer-info {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EBEDEE;
+    padding: 0 105px;
+}
+
+p.sm-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+h2.dealer-title {
+    font-size: 40px;
+    line-height: 35px;
+    margin-bottom: 25px;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+.signature-area {
+    margin-top: 20px;
+}
+
+p.dealer-name {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.dealer-name:before {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    content: "";
+    left: -42px;
+    background: var(--main-color);
+    top: 11px;
+}
+
+.signature-area img {
+    display: block;
+    margin: auto;
+}
+
+p.dealer-name:after {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    content: "";
+    right: -42px;
+    background: var(--main-color);
+    top: 11px;
+}
+
+
+/* ====================================SERVICE ============== */
+
+.service-card {
+    background: #f9f9f9;
+    padding: 50px 35px;
+}
+
+.service-icon {
+    margin-bottom: 20px;
+}
+
+p.service-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.service {
+    background: var(--white-color);
+}
+
+p.service-des {
+    font-family: 'Inter';
+    color: #002a3ab8;
+}
+
+.service-icon img {
+    width: 50px;
+}
