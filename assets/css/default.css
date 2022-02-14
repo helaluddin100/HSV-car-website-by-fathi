@@ -195,5 +195,51 @@ table.table {
     padding-bottom: 80px;
 }
 
+.z-2 {
+    z-index: 2;
+}
+
 
 /* ===========service============ */
+
+@media screen and (max-width:992px) {
+    .cpy-6 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .cpt-6 {
+        padding-top: 60px;
+    }
+    .cpy-8 {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .cpy-6 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .cpt-6 {
+        padding-top: 50px;
+    }
+    .cpy-8 {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .cpy-6 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .cpt-6 {
+        padding-top: 40px;
+    }
+    .cpy-8 {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+}

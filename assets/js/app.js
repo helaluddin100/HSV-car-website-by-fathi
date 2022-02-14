@@ -5,14 +5,24 @@ $(document).ready(function() {
 
 // ================occastion=============
 var swiper = new Swiper(".occastion-slider", {
-    slidesPerView: 2.3,
+    slidesPerView: 1,
     loop: true,
     centeredSlides: true,
     spaceBetween: 20,
     grabCursor: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+    breakpoints: {
+        680: {
+            slidesPerView: 1.5,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 1.9,
+            spaceBetween: 30,
+        },
+        1170: {
+            slidesPerView: 2.5,
+            spaceBetween: 30,
+        }
     },
 });
 
@@ -26,6 +36,7 @@ var swiper = new Swiper(".product-view-slider", {
     pagination: {
         el: ".swiper-pagination",
     },
+
 });
 
 
@@ -33,15 +44,38 @@ var swiper = new Swiper(".product-view-slider", {
 $(window).on("scroll", function() {
     var scrolling = $(this).scrollTop();
     if (scrolling > 55) {
-        $(".menu-header").addClass("navbar-fixed");
+        $(".topheader").addClass("navbar-fixed");
     } else {
-        $(".menu-header").removeClass("navbar-fixed");
+        $(".topheader").removeClass("navbar-fixed");
     }
 });
 
-// Hamburger-menu
-$('.hamburger-menu').on('click', function() {
-    $('.hamburger-menu .line-top, #menu').toggleClass('current');
-    $('.hamburger-menu .line-center').toggleClass('current');
-    $('.hamburger-menu .line-bottom').toggleClass('current');
+
+// ===================menu toggle ============
+$(".hamburger-menu").click(function() {
+    $(".mobile-menu").addClass("active");
+});
+$(".menu-close").click(function() {
+    $(".mobile-menu").removeClass("active");
+});
+
+// =================service slider ================
+var swiper = new Swiper(".service-slider", {
+
+    slidesPerView: 1,
+    breakpoints: {
+        680: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+
+        },
+        840: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1170: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        }
+    },
 });

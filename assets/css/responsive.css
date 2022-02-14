@@ -1,3 +1,9 @@
+@media screen and (max-width:1300px) {
+    .dealer-info {
+        padding: 0px 60px;
+    }
+}
+
 @media screen and (max-width:1150px) {
     .rating-review {
         display: none;
@@ -5,13 +11,16 @@
     .rating-language {
         justify-content: end;
     }
+    .dealer-info {
+        padding: 0 50px;
+    }
 }
 
 @media screen and (max-width:1010px) {
-    ul.menu-ul {
+    ul.mobile-menu {
         display: block;
         position: fixed;
-        z-index: 99;
+        z-index: 90;
         width: 300px;
         right: -100%;
         background: var(--white-color);
@@ -28,5 +37,124 @@
     }
     .hamburger-menu {
         display: block;
+    }
+    .menu-close {
+        display: flex;
+    }
+    .menu-header.footer-menu {
+        display: none;
+    }
+    .footer-content {
+        border-top: none;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .dealer-info {
+        padding: 70px 100px;
+    }
+    .banner-content-wrapper {
+        height: 550px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .banner-img {
+        display: none;
+    }
+    .banner-content-wrapper {
+        height: 575px;
+    }
+    .top-contact {
+        display: none;
+    }
+    h2.occasion-title {
+        font-size: 30px;
+    }
+    .left-title h5 {
+        font-size: 15px;
+    }
+    .last-footer {
+        display: block;
+        padding-top: 30px;
+    }
+    .dealer-info {
+        padding: 70px 60px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .occastion-head {
+        display: block;
+    }
+    h2.occasion-title {
+        font-size: 35px;
+    }
+    .left-title h5 {
+        font-size: 18px;
+    }
+    .dealer-info {
+        padding: 50px 40px;
+    }
+    .banner-content-wrapper {
+        height: auto;
+        padding: 70px 0;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .se-border::before {
+        border-right: 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .right-area {
+        display: block;
+    }
+    .copy-sec {
+        margin-bottom: 20px;
+    }
+    .footer-social {
+        margin-bottom: 20px;
+    }
+    h2.occasion-title {
+        font-size: 30px;
+    }
+    .dealer-info {
+        padding: 40px 30px;
+    }
+    h2.dealer-title {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 14px;
+    }
+    .banner-home-expert {
+        display: block;
+        margin-top: 40px;
+    }
+    .icon-text {
+        padding: 5px 0;
+    }
+    p.model {
+        font-size: 20px;
+    }
+    .car-model span {
+        font-size: 11px;
+        margin-left: 15px;
+    }
+    .price {
+        font-size: 20px;
+    }
+    .custom-btn-alt {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .mkb-details ul li {
+        margin-right: 10px;
+    }
+    p.st-text {
+        font-size: 12px;
     }
 }

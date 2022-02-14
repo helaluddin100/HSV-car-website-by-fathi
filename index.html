@@ -30,14 +30,14 @@
     <!-- ==========body wrapper=========== -->
     <div class="bory-wrapper">
         <!-- HEADER  -->
-        <header>
+        <header id="header">
             <!-- NAVIGATIN  -->
             <nav class="navigation">
                 <!-- TOP HEADER  -->
                 <div class="top-head">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-10 col-lg-9 col-xl-6">
+                            <div class="col-md-10 col-lg-7 col-xl-6">
                                 <div class="top-contact">
                                     <ul>
                                         <li>
@@ -52,7 +52,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-md-2 col-lg-3 col-xl-6">
+                            <div class="col-md-2 col-lg-5 col-xl-6">
                                 <div class="rating-language">
                                     <div class="rating-review">
                                         <ul class="rating-ul">
@@ -92,14 +92,17 @@
                 </div>
                 <!-- TOP HEADER END  -->
                 <!-- MAIN HEADER  -->
-                <div class="menu-header">
+                <div class="menu-header topheader">
                     <div class="container">
                         <div class="navigation-inner">
                             <div class="logo">
                                 <a href="" class="logo-link"><img src="assets/img/logo.png" alt=""></a>
                             </div>
                             <div class="menu">
-                                <ul class="menu-ul">
+                                <ul class="menu-ul mobile-menu">
+                                    <li>
+                                        <div class="menu-close"><i class="icofont-close"></i></div>
+                                    </li>
                                     <li><a href="index.html" class="nav-link active">Home</a></li>
                                     <li><a href="" class="nav-link">Occassions</a></li>
                                     <li><a href="" class="nav-link">Bestelauto's</a></li>
@@ -113,28 +116,27 @@
 
                             <!-- menu toggler -->
                             <div class="hamburger-menu">
-                                <span class="line-top"></span>
-                                <span class="line-center"></span>
-                                <span class="line-bottom"></span>
+                                <i class="icofont-navigation-menu"></i>
                             </div>
                         </div>
                     </div>
                 </div>
             </nav>
         </header>
+
         <!-- HEADER END  -->
         <!-- BANNER START  -->
         <div class="banner">
             <!-- CONTAINER  -->
-            <div class="container">
+            <div class="container ">
                 <!-- ROW -->
                 <div class="row">
 
-                    <div class="col-md-8">
+                    <div class="col-md-10 col-lg-9 col-xl-8">
                         <div class="banner-content-wrapper">
-                            <div class="banner-content">
+                            <div class="banner-content z-2">
                                 <h4 class="sm-title">
-                                    in- en verkoop van auto’s
+                                    in- en verkoop van auto's
                                 </h4>
                                 <h1 class="title">Uw occassiondealer <br> uit vaassen</h1>
 
@@ -153,7 +155,7 @@
                                     <div class="tab-content filter-tab-conten bg-white" id="pills-tabContent">
                                         <div class="tab-pane fade show active" id="pills-carent" role="tabpanel" aria-labelledby="pills-carent-tab">
                                             <div class="row">
-                                                <div class="col-md-3">
+                                                <div class="col-6 col-sm-3">
                                                     <div class="box">
                                                         <label>Merk</label>
                                                         <select class="wide border-padding-less cs-arrow">
@@ -165,7 +167,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3 se-border">
+                                                <div class="col-6 col-sm-3 se-border">
                                                     <div class="box">
                                                         <label>Model</label>
                                                         <select class="wide border-padding-less cs-arrow">
@@ -177,7 +179,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-6 col-sm-3">
                                                     <div class="box">
                                                         <label>Transmissie</label>
                                                         <select class="wide border-padding-less cs-arrow">
@@ -189,7 +191,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-6 col-sm-3">
                                                     <div class="form-submit-area">
                                                         <button type="submit" class="custom-btn su-form">Zoek</button>
                                                     </div>
@@ -198,7 +200,7 @@
                                         </div>
                                         <div class="tab-pane fade" id="pills-bestelauto" role="tabpanel" aria-labelledby="pills-bestelauto-tab">
                                             <div class="row">
-                                                <div class="col-md-3">
+                                                <div class="col-6 col-sm-3">
                                                     <div class="box">
                                                         <label>Merk</label>
                                                         <select class="wide border-padding-less cs-arrow">
@@ -210,7 +212,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3 se-border">
+                                                <div class="col-6 col-sm-3 se-border">
                                                     <div class="box">
                                                         <label>Model</label>
                                                         <select class="wide border-padding-less cs-arrow">
@@ -222,7 +224,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-6 col-sm-3">
                                                     <div class="box">
                                                         <label>Transmissie</label>
                                                         <select class="wide border-padding-less cs-arrow">
@@ -234,7 +236,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-6 col-sm-3">
                                                     <div class="form-submit-area">
                                                         <button type="submit" class="custom-btn su-form">Zoek</button>
                                                     </div>
@@ -260,6 +262,10 @@
                 <!-- ROW END  -->
             </div>
             <!-- CONTAINER  -->
+            <!-- BANNER RIGHT IMAGE -->
+            <div class="banner-img">
+                <img src="assets/img/banner/banner.png" alt="">
+            </div>
         </div>
         <!-- BANNER END  -->
 
@@ -562,7 +568,272 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="bestelauto" role="tabpanel" aria-labelledby="bestelauto-tab">...</div>
+                        <div class="tab-pane fade" id="bestelauto" role="tabpanel" aria-labelledby="bestelauto-tab">
+                            <div class="swiper occastion-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slider-card">
+                                            <div class="car-view-slider">
+                                                <div class="swiper product-view-slider">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+
+                                                    </div>
+                                                    <div class="swiper-pagination"></div>
+                                                </div>
+
+                                                <div class="service-details">
+                                                    <div class="model-price">
+                                                        <div class="car-model">
+                                                            <p class="model">VOLVO XC60</p>
+                                                            <span>
+                                                                2.4D MOMENTUM AUTOMAAT
+                                                            </span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <p>€10.995</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="car-information">
+                                                        <div class="mkb-details">
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="ml-text">Bouwjaar</p>
+                                                                    <p class="st-text">2020</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="ml-text">KM. stand</p>
+                                                                    <p class="st-text">32.000 <img src="assets/img/icon/stiker.svg" alt=""></p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="ml-text">Brandstof</p>
+                                                                    <p class="st-text">Diesel</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <a href="" class="custom-btn-alt">
+                                                            Bekijk occasion
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-card">
+                                            <div class="car-view-slider">
+                                                <div class="swiper product-view-slider">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+
+                                                    </div>
+                                                    <div class="swiper-pagination"></div>
+                                                </div>
+
+                                                <div class="service-details">
+                                                    <div class="model-price">
+                                                        <div class="car-model">
+                                                            <p class="model">VOLVO XC60</p>
+                                                            <span>
+                                                                2.4D MOMENTUM AUTOMAAT
+                                                            </span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <p>€10.995</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="car-information">
+                                                        <div class="mkb-details">
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="ml-text">Bouwjaar</p>
+                                                                    <p class="st-text">2020</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="ml-text">KM. stand</p>
+                                                                    <p class="st-text">32.000 <img src="assets/img/icon/stiker.svg" alt=""></p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="ml-text">Brandstof</p>
+                                                                    <p class="st-text">Diesel</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <a href="" class="custom-btn-alt">
+                                                            Bekijk occasion
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-card">
+                                            <div class="car-view-slider">
+                                                <div class="swiper product-view-slider">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+
+                                                    </div>
+                                                    <div class="swiper-pagination"></div>
+                                                </div>
+
+                                                <div class="service-details">
+                                                    <div class="model-price">
+                                                        <div class="car-model">
+                                                            <p class="model">VOLVO XC60</p>
+                                                            <span>
+                                                                2.4D MOMENTUM AUTOMAAT
+                                                            </span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <p>€10.995</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="car-information">
+                                                        <div class="mkb-details">
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="ml-text">Bouwjaar</p>
+                                                                    <p class="st-text">2020</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="ml-text">KM. stand</p>
+                                                                    <p class="st-text">32.000 <img src="assets/img/icon/stiker.svg" alt=""></p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="ml-text">Brandstof</p>
+                                                                    <p class="st-text">Diesel</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <a href="" class="custom-btn-alt">
+                                                            Bekijk occasion
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-card">
+                                            <div class="car-view-slider">
+                                                <div class="swiper product-view-slider">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+
+                                                    </div>
+                                                    <div class="swiper-pagination"></div>
+                                                </div>
+
+                                                <div class="service-details">
+                                                    <div class="model-price">
+                                                        <div class="car-model">
+                                                            <p class="model">VOLVO XC60</p>
+                                                            <span>
+                                                                2.4D MOMENTUM AUTOMAAT
+                                                            </span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <p>€10.995</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="car-information">
+                                                        <div class="mkb-details">
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="ml-text">Bouwjaar</p>
+                                                                    <p class="st-text">2020</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="ml-text">KM. stand</p>
+                                                                    <p class="st-text">32.000 <img src="assets/img/icon/stiker.svg" alt=""></p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="ml-text">Brandstof</p>
+                                                                    <p class="st-text">Diesel</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <a href="" class="custom-btn-alt">
+                                                            Bekijk occasion
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-card">
+                                            <div class="car-view-slider">
+                                                <div class="swiper product-view-slider">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+                                                        <div class="swiper-slide"><img src="assets/img/slider/1.png" class="slider-img" alt=""></div>
+
+                                                    </div>
+                                                    <div class="swiper-pagination"></div>
+                                                </div>
+
+                                                <div class="service-details">
+                                                    <div class="model-price">
+                                                        <div class="car-model">
+                                                            <p class="model">VOLVO XC60</p>
+                                                            <span>
+                                                                2.4D MOMENTUM AUTOMAAT
+                                                            </span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <p>€10.995</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="car-information">
+                                                        <div class="mkb-details">
+                                                            <ul>
+                                                                <li>
+                                                                    <p class="ml-text">Bouwjaar</p>
+                                                                    <p class="st-text">2020</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="ml-text">KM. stand</p>
+                                                                    <p class="st-text">32.000 <img src="assets/img/icon/stiker.svg" alt=""></p>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="ml-text">Brandstof</p>
+                                                                    <p class="st-text">Diesel</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <a href="" class="custom-btn-alt">
+                                                            Bekijk occasion
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- OCCASION SLIDER END -->
@@ -579,29 +850,37 @@
                 <div class="container">
                     <!-- ROW  -->
                     <div class="row">
-                        <div class="col-md-3">
-                            <div class="dealer-product mb-4">
-                                <img src="assets/img/banner/1.png" alt="" class="dealer-product-img">
-                                <div class="dealer-contact">
-                                    <div class="dealer-contact-info">
-                                        <h4>Contact</h4>
-                                        <a href="" class="contact-btn">Learn More <img src="assets/img/icon/right.svg" alt=""></a>
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-12">
+                                    <div class="dealer-product mb-4">
+                                        <img src="assets/img/banner/1.png" alt="" class="dealer-product-img">
+                                        <div class="dealer-contact">
+                                            <div class="dealer-contact-info">
+                                                <h4>Contact</h4>
+                                                <a href="" class="contact-btn">Learn More <img src="assets/img/icon/right.svg" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-12">
+                                    <div class="dealer-product mb-4">
+                                        <img src="assets/img/banner/2.png" alt="" class="dealer-product-img">
+                                        <div class="dealer-contact">
+                                            <div class="dealer-contact-info">
+                                                <h4>Contact</h4>
+                                                <a href="" class="contact-btn">Learn More <img src="assets/img/icon/right.svg" alt=""></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="dealer-product mb-4">
-                                <img src="assets/img/banner/2.png" alt="" class="dealer-product-img">
-                                <div class="dealer-contact">
-                                    <div class="dealer-contact-info">
-                                        <h4>Contact</h4>
-                                        <a href="" class="contact-btn">Learn More <img src="assets/img/icon/right.svg" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
+
+
                         </div>
 
-                        <div class="col-md-6 mb-4">
+                        <div class="col-lg-6 mb-4">
                             <div class="dealer-info">
                                 <div class="info-inner">
                                     <p class="sm-title">
@@ -620,25 +899,33 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="dealer-product mb-4">
-                                <img src="assets/img/banner/3.png" alt="" class="dealer-product-img">
-                                <div class="dealer-contact">
-                                    <div class="dealer-contact-info">
-                                        <h4>Contact</h4>
-                                        <a href="" class="contact-btn">Learn More <img src="assets/img/icon/right.svg" alt=""></a>
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-12">
+                                    <div class="dealer-product mb-4">
+                                        <img src="assets/img/banner/3.png" alt="" class="dealer-product-img">
+                                        <div class="dealer-contact">
+                                            <div class="dealer-contact-info">
+                                                <h4>Contact</h4>
+                                                <a href="" class="contact-btn">Learn More <img src="assets/img/icon/right.svg" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-12">
+                                    <div class="dealer-product mb-4">
+                                        <img src="assets/img/banner/4.png" alt="" class="dealer-product-img">
+                                        <div class="dealer-contact">
+                                            <div class="dealer-contact-info">
+                                                <h4>Contact</h4>
+                                                <a href="" class="contact-btn">Learn More <img src="assets/img/icon/right.svg" alt=""></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="dealer-product mb-4">
-                                <img src="assets/img/banner/4.png" alt="" class="dealer-product-img">
-                                <div class="dealer-contact">
-                                    <div class="dealer-contact-info">
-                                        <h4>Contact</h4>
-                                        <a href="" class="contact-btn">Learn More <img src="assets/img/icon/right.svg" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
+
+
                         </div>
                     </div>
                     <!-- ROW END  -->
@@ -664,67 +951,72 @@
                 <!-- ROW END  -->
                 <!-- SERVICE -->
                 <div class="service-card-wrapper mt-4">
-                    <div class="row">
-                        <div class="col-md-3 mb-4">
-                            <div class="service-card">
-                                <div class="service-icon">
-                                    <img src="assets/img/icon/car.svg" alt="">
+
+                    <div class="swiper service-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="service-card">
+                                    <div class="service-icon">
+                                        <img src="assets/img/icon/car.svg" alt="">
+                                    </div>
+                                    <div class="service-info">
+                                        <p class="service-title">
+                                            In- en verkoop van auto’s
+                                        </p>
+                                        <p class="service-des">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut urna ut elit tincidunt suscipit at nec elit.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="service-info">
-                                    <p class="service-title">
-                                        In- en verkoop van auto’s
-                                    </p>
-                                    <p class="service-des">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut urna ut elit tincidunt suscipit at nec elit.
-                                    </p>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-card">
+                                    <div class="service-icon">
+                                        <img src="assets/img/icon/star-checkmark.svg" alt="">
+                                    </div>
+                                    <div class="service-info">
+                                        <p class="service-title">
+                                            Inruil van auto’s
+                                        </p>
+                                        <p class="service-des">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut urna ut elit tincidunt suscipit at nec elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-card">
+                                    <div class="service-icon">
+                                        <img src="assets/img/icon/mobile-phone.svg" alt="">
+                                    </div>
+                                    <div class="service-info">
+                                        <p class="service-title">
+                                            Garantie bij aanschaf
+                                        </p>
+                                        <p class="service-des">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut urna ut elit tincidunt suscipit at nec elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-card">
+                                    <div class="service-icon">
+                                        <img src="assets/img/icon/Whatsup.svg" alt="">
+                                    </div>
+                                    <div class="service-info">
+                                        <p class="service-title">
+                                            Export dienstverlening
+                                        </p>
+                                        <p class="service-des">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut urna ut elit tincidunt suscipit at nec elit.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 mb-4">
-                            <div class="service-card">
-                                <div class="service-icon">
-                                    <img src="assets/img/icon/star-checkmark.svg" alt="">
-                                </div>
-                                <div class="service-info">
-                                    <p class="service-title">
-                                        Inruil van auto’s
-                                    </p>
-                                    <p class="service-des">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut urna ut elit tincidunt suscipit at nec elit.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-4">
-                            <div class="service-card">
-                                <div class="service-icon">
-                                    <img src="assets/img/icon/mobile-phone.svg" alt="">
-                                </div>
-                                <div class="service-info">
-                                    <p class="service-title">
-                                        Garantie bij aanschaf
-                                    </p>
-                                    <p class="service-des">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut urna ut elit tincidunt suscipit at nec elit.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-4">
-                            <div class="service-card">
-                                <div class="service-icon">
-                                    <img src="assets/img/icon/Whatsup.svg" alt="">
-                                </div>
-                                <div class="service-info">
-                                    <p class="service-title">
-                                        Export dienstverlening
-                                    </p>
-                                    <p class="service-des">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut urna ut elit tincidunt suscipit at nec elit.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
                 <!-- SERVICE CARD  -->
@@ -760,7 +1052,7 @@
                 <div class="container">
                     <div class="footer-content">
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-lg-8 mb-4">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="address-area">
@@ -784,37 +1076,39 @@
                                         <div class="footer-sec-titel">
                                             <h4>Openingstijden</h4>
                                         </div>
-                                        <table class="table table-borderless">
-                                            <tbody class="shedul-table">
-                                                <tr>
-                                                    <td>Maandag:</td>
-                                                    <td>09.00 t/m 18.00</td>
-                                                    <td>Vrijdag:</td>
-                                                    <td>09.00 t/m 18.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Dinsdag:</td>
-                                                    <td>09.00 t/m 18.00</td>
-                                                    <td>Zaterdag:</td>
-                                                    <td>09.00 t/m 18.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Woensdag:</td>
-                                                    <td> 09.00 t/m 18.00</td>
-                                                    <td>Zondag:</td>
-                                                    <td>Op afspraak</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Donderdag:</td>
-                                                    <td>09.00 t/m 18.00</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div class="table-responsive">
+                                            <table class="table table-borderless">
+                                                <tbody class="shedul-table">
+                                                    <tr>
+                                                        <td>Maandag:</td>
+                                                        <td>09.00 t/m 18.00</td>
+                                                        <td>Vrijdag:</td>
+                                                        <td>09.00 t/m 18.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Dinsdag:</td>
+                                                        <td>09.00 t/m 18.00</td>
+                                                        <td>Zaterdag:</td>
+                                                        <td>09.00 t/m 18.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Woensdag:</td>
+                                                        <td> 09.00 t/m 18.00</td>
+                                                        <td>Zondag:</td>
+                                                        <td>Op afspraak</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Donderdag:</td>
+                                                        <td>09.00 t/m 18.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-lg-4 mb-4">
                                 <div class="footer-map">
                                     <img src="assets/img/map.png" class="footer-map" alt="">
                                 </div>
@@ -831,20 +1125,22 @@
                             <p>Made with <img src="assets/img/icon/hart.svg" alt=""> by Huqson</p>
                         </div>
                         <div class="right-area">
-                            <div class="barnd-logo">
-                                <img src="assets/img/rwd.png" class="barnd-img" alt="">
-                                <img src="assets/img/nap.png" class="barnd-img" alt="">
-                            </div>
+                            <div class="footer-social">
+                                <div class="barnd-logo">
+                                    <img src="assets/img/rwd.png" class="barnd-img" alt="">
+                                    <img src="assets/img/nap.png" class="barnd-img" alt="">
+                                </div>
 
-                            <div class="social">
-                                <ul>
-                                    <li>
-                                        <a href="" class="social-link"><img src="assets/img/icon/facebook.svg" alt=""></a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="social-link"><img src="assets/img/icon/insta.svg" alt=""></a>
-                                    </li>
-                                </ul>
+                                <div class="social">
+                                    <ul>
+                                        <li>
+                                            <a href="" class="social-link"><img src="assets/img/icon/facebook.svg" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="social-link"><img src="assets/img/icon/insta.svg" alt=""></a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="backto-top">
                                 <a href="#header" class="back-link">Terug naar boven <img src="assets/img/icon/top.svg" alt=""></a>

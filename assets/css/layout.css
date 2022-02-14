@@ -98,47 +98,9 @@ ul.rating-ul p {
     /* position: absolute; */
     right: 1.5rem;
     display: none;
-    z-index: 999;
-    top: -1.5rem;
-}
-
-.hamburger-menu span {
-    background: #353E5C;
-    width: 3.0rem;
-    height: 0.3rem;
-    display: block;
-    margin: 0.5rem 0;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-.hamburger-menu:hover .line-top {
-    -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    transform: translateY(-100%);
-}
-
-.hamburger-menu:hover .line-bottom {
-    -webkit-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    transform: translateY(100%);
-}
-
-.hamburger-menu .line-top.current {
-    -webkit-transform: translateY(200%) rotate(135deg);
-    -ms-transform: translateY(200%) rotate(135deg);
-    transform: translateY(200%) rotate(135deg);
-}
-
-.hamburger-menu .line-center.current {
-    opacity: 0;
-}
-
-.hamburger-menu .line-bottom.current {
-    -webkit-transform: translateY(-325%) rotate(-135deg);
-    -ms-transform: translateY(-325%) rotate(-135deg);
-    transform: translateY(-325%) rotate(-135deg);
+    /* z-index: 999; */
+    /* top: -1.5rem; */
+    font-size: 30px;
 }
 
 
@@ -183,13 +145,36 @@ nav.navigation {
     z-index: 99;
 }
 
+.menu-ul.active {
+    right: 0;
+}
+
+.menu-close {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white-color);
+    margin: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0px 0px 12px 1px #002a3a21;
+    display: none;
+    right: 5px;
+}
+
 
 /* =====================================Footer============== */
 
 .footer-area {
     background: var(--white-color);
     border-top: 1px solid #ddd;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding: 30px 0;
 }
 
@@ -295,10 +280,16 @@ img.footer-map {
     width: 100%;
 }
 
-.menu-header.navbar-fixed {
+.topheader.navbar-fixed {
     position: fixed;
     width: 100%;
     background: var(--white-color);
     top: 0;
     z-index: 99;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
