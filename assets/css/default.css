@@ -129,7 +129,7 @@ table.table {
 .custom-btn {
     background: var(--main-color);
     padding: 6px 20px;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     font-size: 13px;
     text-transform: uppercase;
     color: var(--white-color);
@@ -152,8 +152,8 @@ table.table {
 
 .custom-btn-alt {
     background: var(--text-color);
-    padding: 6px 20px;
-    border-radius: 4px;
+    padding: 6px 15px;
+    /* border-radius: 4px; */
     font-size: 13px;
     text-transform: uppercase;
     color: var(--white-color);
@@ -191,12 +191,21 @@ table.table {
 }
 
 .cpy-8 {
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 60px;
 }
 
 .z-2 {
     z-index: 2;
+}
+
+.cmb-5 {
+    margin-bottom: 50px;
+}
+
+.cpy-5 {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 

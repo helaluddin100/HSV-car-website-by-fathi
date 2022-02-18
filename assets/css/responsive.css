@@ -78,9 +78,21 @@
     .last-footer {
         display: block;
         padding-top: 30px;
+        text-align: center;
     }
     .dealer-info {
         padding: 70px 60px;
+    }
+    .right-area {
+        margin-top: 15px;
+        justify-content: center;
+    }
+    .backto-top {
+        display: none;
+    }
+    .footer-content {
+        padding-bottom: 0;
+        border-bottom: none;
     }
 }
 

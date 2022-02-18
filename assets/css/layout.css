@@ -207,7 +207,7 @@ ul.address-ul li p {
 .footer-content {
     padding: 50px 0;
     border-top: 1px solid #ddd;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     border-bottom: 1px solid #ddd;
 }
 
@@ -292,4 +292,59 @@ img.footer-map {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+
+/* ===================footer toggle============= */
+
+.shfooter .collapse {
+    display: inherit;
+}
+
+@media (max-width:767px) {
+    .shfooter ul {
+        margin-bottom: 0;
+    }
+    .shfooter .collapse {
+        display: none;
+    }
+    .shfooter .collapse.show {
+        display: block;
+    }
+    .shfooter .title .icofont-rounded-up,
+    .shfooter .title[aria-expanded=true] .icofont-rounded-down {
+        display: none;
+    }
+    .shfooter .title[aria-expanded=true] .icofont-rounded-up {
+        display: block;
+    }
+    .shfooter .navbar-toggler {
+        display: inline-block;
+        padding: 0;
+    }
+}
+
+.resize {
+    text-align: center;
+}
+
+.resize {
+    margin-top: 3rem;
+    font-size: 1.25rem;
+}
+
+h2.colleps-button {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.colleps-ind {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.colleps-border {
+    border-bottom: 1px solid #dfdfdf;
+    margin-bottom: 10px;
 }

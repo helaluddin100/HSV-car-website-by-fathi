@@ -79,3 +79,49 @@ var swiper = new Swiper(".service-slider", {
         }
     },
 });
+
+// ====================filter menu active ===========
+$(".filter-one li").click(function() {
+    $(".filter-one li").removeClass("active");
+    $(this).addClass("active");
+});
+$(".filter-tow li").click(function() {
+    $(".filter-tow li").removeClass("active");
+    $(this).addClass("active");
+});
+
+// =============car show=========
+var swiper = new Swiper(".car-show-thumbnel", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 6,
+    freeMode: true,
+    watchSlidesProgress: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+  });
+  var swiper2 = new Swiper(".car-show", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+
+//   ==============RELATED CAR SLIDER=============
+var swiper = new Swiper(".relatedProduct", {
+    loop: false,
+    slidesPerView: 3,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".next",
+      prevEl: ".prev",
+    },
+  });
+
