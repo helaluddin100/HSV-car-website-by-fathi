@@ -93,10 +93,10 @@ var swiper = new Swiper(".service-slider", {
 });
 
 // ====================filter menu active ===========
-$(".filter-one li").click(function() {
-    $(".filter-one li").removeClass("active");
-    $(this).addClass("active");
-});
+// $(".filter-one li").click(function() {
+//     $(".filter-one li").removeClass("active");
+//     $(this).addClass("active");
+// });
 $(".filter-tow li").click(function() {
     $(".filter-tow li").removeClass("active");
     $(this).addClass("active");
@@ -129,11 +129,22 @@ var swiper = new Swiper(".car-show-thumbnel", {
 //   ==============RELATED CAR SLIDER=============
 var swiper = new Swiper(".relatedProduct", {
     loop: false,
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 20,
     navigation: {
       nextEl: ".next",
       prevEl: ".prev",
+    },
+    breakpoints: {
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+
+        },
+        900: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
     },
   });
 

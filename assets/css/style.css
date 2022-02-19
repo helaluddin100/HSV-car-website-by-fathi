@@ -918,6 +918,10 @@ p.comment-message {
 
 /* ====================ABOUT============ */
 
+.signature-area-img img {
+    width: 100%;
+}
+
 h5.s-title {
     color: var(--main-color);
     text-transform: uppercase;
@@ -989,6 +993,10 @@ img.member-img {
 
 
 /* =========================Purchase ====================== */
+
+.button-al {
+    padding-left: 15px;
+}
 
 h2.page-title {
     font-size: 24px;
@@ -1083,7 +1091,7 @@ button.submit-btn:hover {
 
 .pay-attention {
     background-image: url(../img/banner/pay.png);
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 400px;
@@ -1099,6 +1107,7 @@ button.submit-btn:hover {
 
 .page-banner-text p {
     color: #B6DCE1;
+    font-size: 20px;
 }
 
 

@@ -14,6 +14,12 @@
     .dealer-info {
         padding: 0 50px;
     }
+    .about-content {
+        padding-right: 0;
+    }
+    .get-in-tuch {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width:1010px) {
@@ -62,6 +68,9 @@
 }
 
 @media screen and (max-width:992px) {
+    .reverse {
+        flex-direction: column-reverse;
+    }
     .dealer-info {
         padding: 70px 100px;
     }
@@ -72,9 +81,28 @@
         width: 100%;
         height: 225px;
     }
+    .filter-area {
+        grid-template-columns: 33% 33% 33%;
+    }
+    .filter-col-5:nth-child(4)::after {
+        display: none;
+    }
 }
 
 @media screen and (max-width:768px) {
+    .feature-listing-tab {
+        width: 150px;
+    }
+    .filter-area {
+        grid-template-columns: 50% 50%;
+    }
+    .filter-col-5:nth-child(4)::after {
+        display: block;
+    }
+    .filter-col-5:nth-child(3)::after,
+    .filter-col-5:nth-child(5)::after {
+        display: none;
+    }
     .banner-img {
         display: none;
     }
@@ -117,6 +145,15 @@
     .mapboxgl-canvas {
         width: 100% !important;
     }
+    .page-banner {
+        height: 250px;
+    }
+    .pay-attention {
+        height: 300px;
+    }
+    .page-banner-text h2 {
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width:650px) {
@@ -148,9 +185,25 @@
     .se-border::before {
         border-right: 0;
     }
+    .button-al {
+        padding-left: 0px;
+    }
 }
 
 @media screen and (max-width:500px) {
+    .social-listing {
+        display: none;
+    }
+    .filter-area {
+        grid-template-columns: 100%;
+    }
+    .filter-col-5::after,
+    .filter-col-5::before {
+        display: none;
+    }
+    .filter-col-5:nth-child(4)::after {
+        display: none;
+    }
     .right-area {
         display: block;
     }
@@ -207,5 +260,11 @@
     .dealer-contact-info h4 {
         font-size: 24px;
         margin-bottom: 5px;
+    }
+    .get-in-tuch h1 {
+        font-size: 45px;
+    }
+    .contact-form {
+        padding: 50px 20px;
     }
 }
