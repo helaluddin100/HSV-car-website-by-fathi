@@ -2,7 +2,22 @@
 $(document).ready(function() {
     $('select').niceSelect();
 });
-
+// ==============MOBILE MENU==============
+const menuBtn = document.querySelector('.hamburger-menu');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+  }
+});
+// ===================menu toggle ============
+$(".hamburger-menu").click(function() {
+    $(".mobile-menu").toggleClass("active");
+});
 // ================occastion=============
 var swiper = new Swiper(".occastion-slider", {
     slidesPerView: 1,
@@ -51,13 +66,7 @@ $(window).on("scroll", function() {
 });
 
 
-// ===================menu toggle ============
-$(".hamburger-menu").click(function() {
-    $(".mobile-menu").addClass("active");
-});
-$(".menu-close").click(function() {
-    $(".mobile-menu").removeClass("active");
-});
+
 
 // =================service slider ================
 var swiper = new Swiper(".service-slider", {

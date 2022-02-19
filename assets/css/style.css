@@ -973,3 +973,240 @@ img.member-img {
 .team-section {
     background: #F7F7F7;
 }
+
+
+/* =========================Purchase ====================== */
+
+h2.page-title {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.page-content p {
+    font-family: var(--normal-font);
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.form-control:focus {
+    border-color: var(--main-color);
+    box-shadow: none;
+}
+
+.form-control {
+    padding: 15px;
+    border-radius: 0;
+}
+
+.select-input {
+    border-radius: 0;
+    padding: 7px 15px;
+    height: auto;
+    text-transform: uppercase;
+    color: #747474;
+    font-size: 16px;
+}
+
+.select-input:focus {
+    border-color: var(--main-color);
+    box-shadow: none;
+}
+
+.nice-select:after {
+    height: 8px;
+    width: 8px;
+}
+
+.select-input ul li {
+    margin: 0 15px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0 !important;
+}
+
+.select-input .option:hover,
+.select-input .option.focus,
+.select-input .option.selected.focus {
+    background: none;
+}
+
+.form-head {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.form-submit-area {
+    text-align: right;
+}
+
+.form-submit {
+    display: flex;
+    justify-content: end;
+}
+
+button.submit-btn {
+    background: var(--main-color);
+    width: 100%;
+    padding: 10px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .3s;
+    border: 2px solid var(--main-color);
+}
+
+button.submit-btn:hover {
+    background: var(--white-color);
+    color: var(--main-color);
+}
+
+.requerd-type {
+    font-size: 12px;
+    color: #787878;
+}
+
+
+/* ==============PAY============= */
+
+.pay-attention {
+    background-image: url(../img/banner/pay.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.page-banner-text h2 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.page-banner-text p {
+    color: #B6DCE1;
+}
+
+
+/* ========================contact page================= */
+
+.contact-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.contact-text img {
+    margin-right: 10px;
+}
+
+p.contact-title {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.location-mark {
+    width: 50px;
+    height: 50px;
+    background: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.location-mark img {
+    margin-right: 0;
+}
+
+span.area-name {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-location {
+    background: var(--white-color);
+    box-shadow: 0px 1px 108px 1px #e7e7e7;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.get-in-tuch {
+    padding: 0 100px;
+}
+
+.get-in-tuch h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 36px;
+}
+
+.form-title {
+    display: flex;
+    align-items: center;
+}
+
+.form-title img {
+    margin-right: 20px;
+}
+
+.contact-form {
+    padding: 50px;
+    background: var(--white-color);
+    box-shadow: 1px 14px 200px 1px #ededed;
+}
+
+.contact-area {
+    background: #F7F7F7;
+}
+
+.submit-contact {
+    width: 100%;
+    background: var(--second-color);
+    padding: 12px;
+    border: 2px solid var(--second-color);
+    color: var(--white-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: .3s;
+    font-weight: 800;
+}
+
+.submit-contact:hover {
+    background: var(--white-color);
+    color: var(--second-color);
+}
+
+.form-group label {
+    margin-bottom: 10px;
+}
+
+.contact-content {
+    height: 100%;
+    padding-top: 30px;
+}
+
+
+/* ======================route page =============== */
+
+.route-map .map {
+    width: 100%;
+    height: 80vh;
+}
+
+.mapboxgl-popup {
+    min-width: 350px !important;
+}
+
+.map-popup {
+    padding: 20px;
+    display: flex;
+}

@@ -17,6 +17,16 @@
 }
 
 @media screen and (max-width:1010px) {
+    .top-head {
+        display: none;
+    }
+    .humbarger-language {
+        display: flex;
+    }
+    .menu-header {
+        padding: 0px 0;
+        transition: .3s;
+    }
     ul.mobile-menu {
         display: block;
         position: fixed;
@@ -24,19 +34,20 @@
         width: 300px;
         right: -100%;
         background: var(--white-color);
-        box-shadow: -4px 1px 20px 0px #00000014;
+        box-shadow: -7px 20px 20px 0px #00000014;
         top: 0;
         bottom: 0;
-        height: 100vh;
+        height: 96vh;
         overflow-y: auto;
         padding: 20px 0;
         transition: .3s;
+        margin-top: 68px;
     }
     a.nav-link {
         padding: 10px 20px;
     }
     .hamburger-menu {
-        display: block;
+        display: flex;
     }
     .menu-close {
         display: flex;
@@ -168,5 +179,11 @@
     }
     p.st-text {
         font-size: 12px;
+    }
+    ul.mobile-menu {
+        width: 100%;
+    }
+    .language {
+        display: none;
     }
 }
