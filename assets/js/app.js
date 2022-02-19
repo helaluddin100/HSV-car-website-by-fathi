@@ -67,15 +67,17 @@ $(window).on("scroll", function() {
 
 
 
-
 // =================service slider ================
 var swiper = new Swiper(".service-slider", {
 
     slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination",
+    },
     breakpoints: {
-        680: {
+        500: {
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 10,
 
         },
         840: {
@@ -85,6 +87,7 @@ var swiper = new Swiper(".service-slider", {
         1170: {
             slidesPerView: 4,
             spaceBetween: 30,
+            
         }
     },
 });

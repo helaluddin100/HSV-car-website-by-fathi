@@ -113,7 +113,7 @@ ul.rating-ul p {
 }
 
 .menu-btn__burger {
-    width: 40px;
+    width: 35px;
     height: 3px;
     background: #343434;
     border-radius: 5px;
@@ -125,7 +125,7 @@ ul.rating-ul p {
 .menu-btn__burger::after {
     content: '';
     position: absolute;
-    width: 40px;
+    width: 35px;
     height: 3px;
     background: #343434;
     border-radius: 5px;
@@ -220,8 +220,8 @@ nav.navigation {
 .footer-area {
     background: var(--white-color);
     border-top: 1px solid #ddd;
-    /* margin-top: 50px; */
-    padding: 30px 0;
+    padding: 20px 0;
+    /* margin-top: 30px; */
 }
 
 ul.address-ul li {
@@ -264,7 +264,7 @@ ul.address-ul li p {
 }
 
 .location img {
-    margin-right: 20px;
+    margin-right: 13px;
 }
 
 .location {
@@ -338,6 +338,7 @@ img.footer-map {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 
@@ -393,4 +394,79 @@ h2.colleps-button {
 .colleps-border {
     border-bottom: 1px solid #dfdfdf;
     margin-bottom: 10px;
+}
+
+.shfooter h5 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+tbody.shedul-table tr td {
+    padding: 8px 0;
+}
+
+.footer-menu {
+    padding-bottom: 35px;
+}
+
+
+/* =====================================CALL TO ACTION ================== */
+
+.menus {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white-color);
+    padding: 11px 15px 15px;
+}
+
+
+/* ======================================================================Mobile menu start================== */
+
+.menus li {
+    list-style: none;
+    width: 20%;
+}
+
+.menus li a {
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    transition: .5s;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menus li a span {
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    color: var(--second-color);
+    font-family: var(--normal-font);
+}
+
+.menus li a.active-icon span {
+    bottom: 7px;
+    transition-delay: .5s;
+    transition: .5s cubic-bezier(.49, -.35, .77, 1.44);
+    opacity: 1;
+}
+
+.menus li.active-icon a span {
+    bottom: 7px;
+    transition-delay: .5s;
+    transition: .5s cubic-bezier(.49, -.35, .77, 1.44);
+    opacity: 1;
+}
+
+.footer__nav {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 999;
+    display: none;
 }

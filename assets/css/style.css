@@ -13,6 +13,10 @@ h4.sm-title {
     text-transform: uppercase;
 }
 
+.info-inner p {
+    font-family: var(--normal-font);
+}
+
 h1.title {
     font-size: clamp(30px, 5vw, 55px);
     color: var(--white-color);
@@ -188,7 +192,7 @@ label {
 }
 
 h2.occasion-title {
-    font-size: 36px;
+    font-size: 40px;
     line-height: 55px;
     font-weight: 400;
     color: #002A3A;
@@ -202,8 +206,8 @@ h2.occasion-title {
 .occassion-nav button {
     border: none;
     background: none;
-    padding: 15px 25px;
-    border-bottom: 2px solid var(--white-color);
+    padding: 15px 40px;
+    border-bottom: 3px solid var(--white-color);
     color: #868E96;
 }
 
@@ -244,6 +248,8 @@ p.model {
     font-size: 12px;
     font-family: var(--normal-font);
     margin-left: 20px;
+    font-weight: 500;
+    color: #959595;
 }
 
 .service-details {
@@ -259,6 +265,8 @@ p.model {
 
 .mkb-details ul li {
     margin-right: 25px;
+    text-align: left;
+    line-height: 20px;
 }
 
 p.ml-text {
@@ -351,7 +359,7 @@ img.dealer-product-img {
     justify-content: center;
     align-items: center;
     background: #EBEDEE;
-    padding: 0 105px;
+    padding: 0 80px;
 }
 
 p.sm-title {
@@ -363,7 +371,7 @@ p.sm-title {
 
 h2.dealer-title {
     font-size: 40px;
-    line-height: 35px;
+    text-transform: uppercase;
     margin-bottom: 25px;
     color: var(--text-color);
     margin-top: 10px;
@@ -412,7 +420,7 @@ p.dealer-name:after {
 
 .service-card {
     background: #ebedee78;
-    padding: 35px;
+    padding: 55px 35px;
 }
 
 .service-icon {
@@ -429,12 +437,17 @@ p.service-title {
 }
 
 p.service-des {
-    font-family: 'Inter';
+    font-family: var(--normal-font);
     color: #002a3ab8;
 }
 
 .service-icon img {
     width: 50px;
+}
+
+.service-slider {
+    bottom: 0;
+    padding-bottom: 42px;
 }
 
 
@@ -1014,8 +1027,8 @@ h2.page-title {
 }
 
 .nice-select:after {
-    height: 8px;
-    width: 8px;
+    height: 6px;
+    width: 6px;
 }
 
 .select-input ul li {
