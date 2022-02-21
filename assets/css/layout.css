@@ -113,24 +113,25 @@ ul.rating-ul p {
 }
 
 .menu-btn__burger {
-    width: 35px;
-    height: 3px;
-    background: #343434;
-    border-radius: 5px;
-    /* box-shadow: 0 2px 5px rgb(18 19 20); */
+    width: 32px;
     transition: all .5s ease-in-out;
+    font-size: 13px;
+    display: block;
+    line-height: 2px;
+    color: var(--main-color);
+    font-weight: bold;
 }
 
 .menu-btn__burger::before,
 .menu-btn__burger::after {
     content: '';
     position: absolute;
-    width: 35px;
+    width: 32px;
     height: 3px;
-    background: #343434;
+    background: var(--main-color);
     border-radius: 5px;
-    /* box-shadow: 0 2px 5px rgb(18 19 20); */
     transition: all .5s ease-in-out;
+    display: block;
 }
 
 .menu-btn__burger::before {
@@ -190,7 +191,7 @@ a.nav-link:hover {
 }
 
 .menu-header {
-    padding: 15px 0;
+    padding: 20px 0;
     transition: .3s;
 }
 
@@ -209,6 +210,10 @@ nav.navigation {
     align-items: center;
 }
 
+ul.menu-ul li:last-child a {
+    padding-right: 10px;
+}
+
 
 /* =====================================Footer============== */
 
@@ -220,8 +225,7 @@ nav.navigation {
 .footer-area {
     background: var(--white-color);
     border-top: 1px solid #ddd;
-    padding: 20px 0;
-    /* margin-top: 30px; */
+    padding-top: 20px;
 }
 
 ul.address-ul li {
@@ -230,10 +234,12 @@ ul.address-ul li {
     margin-bottom: 25px;
 }
 
-ul.address-ul li p {
+ul.address-ul li a {
     margin-left: 10px;
     line-height: 20px;
     font-family: var(--normal-font);
+    color: var(--text-color);
+    transition: .3s;
 }
 
 .footer-sec-titel h4 {
@@ -280,6 +286,8 @@ tbody.shedul-table {
     grid-template-columns: 41% 59%;
     font-family: var(--normal-font);
     padding-top: 30px;
+    position: relative;
+    padding-bottom: 30px;
 }
 
 .copy-sec h5 {
@@ -299,7 +307,7 @@ tbody.shedul-table {
 }
 
 a.social-link {
-    padding: 10px;
+    padding: 10px 13px;
 }
 
 img.barnd-img {
@@ -341,11 +349,15 @@ img.footer-map {
     width: 100%;
 }
 
+ul.address-ul li a:hover {
+    color: var(--main-color);
+}
+
 
 /* ===================footer toggle============= */
 
 .shfooter .collapse {
-    display: inherit;
+    /* display: inherit; */
 }
 
 @media (max-width:767px) {
@@ -409,6 +421,10 @@ tbody.shedul-table tr td {
     padding-bottom: 35px;
 }
 
+.service-card:hover {
+    box-shadow: 0px 0px 50px 1px #f3f3f3;
+}
+
 
 /* =====================================CALL TO ACTION ================== */
 
@@ -419,7 +435,7 @@ tbody.shedul-table tr td {
     align-items: center;
     justify-content: space-between;
     background: var(--white-color);
-    padding: 11px 15px 15px;
+    padding: 5px 5px 5px;
 }
 
 
@@ -443,7 +459,7 @@ tbody.shedul-table tr td {
 
 .menus li a span {
     display: block;
-    font-size: 14px;
+    font-size: 12px;
     width: 100%;
     color: var(--second-color);
     font-family: var(--normal-font);
@@ -469,4 +485,26 @@ tbody.shedul-table tr td {
     bottom: 0;
     z-index: 999;
     display: none;
+}
+
+.last-footer::before {
+    background-image: url(../img/red-line.svg);
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+}
+
+.hamburger-menu.open .menu-btn__burger i {
+    display: none;
+}
+
+.shfooter .collapse {
+    display: grid;
+}
+
+.collapse:not(.show) {
+    display: grid;
 }

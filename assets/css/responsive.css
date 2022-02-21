@@ -122,7 +122,7 @@
         display: block;
         padding-top: 30px;
         text-align: center;
-        margin-bottom: 75px;
+        /* margin-bottom: 75px; */
     }
     .dealer-info {
         padding: 70px 60px;
@@ -153,6 +153,12 @@
     }
     .page-banner-text h2 {
         margin-top: 10px;
+    }
+    .copy-toggle {
+        padding-bottom: 48px;
+    }
+    .collapse:not(.show) {
+        display: none;
     }
 }
 
@@ -266,5 +272,30 @@
     }
     .contact-form {
         padding: 50px 20px;
+    }
+    .page-banner-text h1 {
+        font-size: 30px;
+    }
+    .car-price {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .alt-btn {
+        padding: 9px;
+        font-size: 10px;
+    }
+    .car-price h2 {
+        font-size: 22px;
+    }
+    .car-price p {
+        margin-right: 6px;
+    }
+    .car-name-cat h2 {
+        font-size: 22px;
+    }
+    .car-name-cat p {
+        font-size: 12px;
     }
 }

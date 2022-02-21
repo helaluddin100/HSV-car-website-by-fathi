@@ -222,6 +222,7 @@ h2.occasion-title {
 
 .slider-img {
     width: 100%;
+    transition: .3s;
 }
 
 .model-price {
@@ -290,6 +291,42 @@ p.st-text {
     background: var(--main-color);
 }
 
+.car-stiker {
+    position: absolute;
+    top: 24px;
+    z-index: 9;
+    transform: rotateZ(-42deg);
+    left: -39px;
+    width: 160px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.car-view-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-anakiwa {
+    background: #86E9FF;
+}
+
+.bg-salomie {
+    background: #FFDD86;
+}
+
+
+/* 
+img.slider-img:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 99;
+} */
+
 
 /* =======================================Delear section design ========= */
 
@@ -342,7 +379,7 @@ img.dealer-product-img {
 }
 
 .contact-btn:hover {
-    color: var(--white-color);
+    color: var(--second-color);
 }
 
 .contact-btn img {
@@ -456,13 +493,18 @@ p.service-des {
 .page-banner {
     background: url(../img/banner/page-banner.png) no-repeat center;
     background-size: cover;
-    height: 300px;
+    height: 255px;
     display: flex;
     align-items: center;
 }
 
 .page-banner-text {
     color: var(--white-color);
+}
+
+.page-banner-text h1 {
+    font-size: 44px;
+    margin-top: 10px;
 }
 
 
@@ -491,7 +533,7 @@ ul.url-list {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     background: var(--white-color);
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .filter-col-5 label {
@@ -760,7 +802,7 @@ a.filter-t-link:hover {
     position: relative;
     display: flex;
     align-items: center;
-    margin: 20px 0 15px;
+    margin: 27px 0 20px;
 }
 
 .info-bar-title:before {
@@ -1006,8 +1048,9 @@ h2.page-title {
 
 .page-content p {
     font-family: var(--normal-font);
-    font-size: 16px;
-    line-height: 27px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #606060;
 }
 
 .form-control:focus {
@@ -1052,8 +1095,12 @@ h2.page-title {
 }
 
 .form-head {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-transform: uppercase;
+}
+
+.form-head h5 {
+    font-size: 14px;
 }
 
 .form-submit-area {
@@ -1231,4 +1278,20 @@ span.area-name {
 .map-popup {
     padding: 20px;
     display: flex;
+}
+
+img.slider-img:hover {
+    transform: scale(1.1);
+}
+
+img.calendar-img {
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    position: relative;
 }

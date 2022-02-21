@@ -46,6 +46,8 @@ var swiper = new Swiper(".occastion-slider", {
 var swiper = new Swiper(".product-view-slider", {
     autoplay: {
         delay: 2000,
+        // disableOnInteraction: true,
+        pauseOnMouseEnter: true,
     },
     loop: true,
     pagination: {
