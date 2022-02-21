@@ -18,6 +18,13 @@ menuBtn.addEventListener('click', () => {
 $(".hamburger-menu").click(function() {
     $(".mobile-menu").toggleClass("active");
 });
+// ===================menu toggle ============
+$(".filter-m-button").click(function() {
+    $(".filter-area").addClass("active");
+});
+$(".remove-filter").click(function() {
+    $(".filter-area").removeClass("active");
+});
 // ================occastion=============
 var swiper = new Swiper(".occastion-slider", {
     slidesPerView: 1,
@@ -150,3 +157,28 @@ var swiper = new Swiper(".relatedProduct", {
     },
   });
 
+  
+
+  var swiper = new Swiper(".teamSlider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+
+        },
+        900: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1100: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+    },
+  });

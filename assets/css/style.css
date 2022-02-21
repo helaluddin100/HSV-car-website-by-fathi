@@ -140,6 +140,7 @@ label {
     bottom: 10%;
     top: 35%;
     height: 35px;
+    border-right: 1px solid #ddd;
 }
 
 .icon-text {
@@ -170,6 +171,38 @@ label {
 
 
 /* ===============occasions============ */
+
+.filter-area.active {
+    right: 0;
+    left: 0;
+}
+
+.remove-filter {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    font-size: 29px;
+    color: var(--main-color);
+    display: none;
+}
+
+.filter-m-button {
+    display: none;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background: var(--main-color);
+    padding: 10px;
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.filter-m-button p {
+    margin-left: 7px;
+}
 
 .occastion {
     background-color: #F7F7F7;
@@ -294,7 +327,7 @@ p.st-text {
 .car-stiker {
     position: absolute;
     top: 24px;
-    z-index: 9;
+    z-index: 1;
     transform: rotateZ(-42deg);
     left: -39px;
     width: 160px;
@@ -458,6 +491,7 @@ p.dealer-name:after {
 .service-card {
     background: #ebedee78;
     padding: 55px 35px;
+    transition: .3s;
 }
 
 .service-icon {
@@ -1031,6 +1065,18 @@ img.member-img {
 
 .team-section {
     background: #F7F7F7;
+}
+
+.team-card {
+    transition: .3s;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.teamSlider {
+    padding-bottom: 75px;
 }
 
 

@@ -422,7 +422,7 @@ tbody.shedul-table tr td {
 }
 
 .service-card:hover {
-    box-shadow: 0px 0px 50px 1px #f3f3f3;
+    transform: translateY(-10px);
 }
 
 

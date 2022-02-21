@@ -68,6 +68,12 @@
 }
 
 @media screen and (max-width:992px) {
+    .filter-m-button {
+        display: flex
+    }
+    .remove-filter {
+        display: block
+    }
     .reverse {
         flex-direction: column-reverse;
     }
@@ -86,6 +92,25 @@
     }
     .filter-col-5:nth-child(4)::after {
         display: none;
+    }
+    .filter-area {
+        display: block;
+        background: var(--white-color);
+        padding: 60px 0;
+        height: 91vh;
+        position: fixed;
+        z-index: 99;
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        transition: .3s;
+    }
+    .filter-col-5.se-border::before,
+    .filter-col-5.se-border::after {
+        display: none;
+    }
+    .filter-col-5 {
+        margin-bottom: 10px;
     }
 }
 
@@ -155,7 +180,7 @@
         margin-top: 10px;
     }
     .copy-toggle {
-        padding-bottom: 48px;
+        padding-bottom: 49px;
     }
     .collapse:not(.show) {
         display: none;
@@ -220,13 +245,13 @@
         margin-bottom: 20px;
     }
     h2.occasion-title {
-        font-size: 30px;
+        font-size: 24px;
     }
     .dealer-info {
         padding: 40px 30px;
     }
     h2.dealer-title {
-        font-size: 30px;
+        font-size: 24px;
         line-height: 30px;
         margin-bottom: 14px;
     }
@@ -238,14 +263,14 @@
         padding: 5px 0;
     }
     p.model {
-        font-size: 20px;
+        font-size: 17px;
     }
     .car-model span {
-        font-size: 11px;
-        margin-left: 15px;
+        font-size: 8px;
+        margin-left: 8px;
     }
     .price {
-        font-size: 20px;
+        font-size: 17px;
     }
     .custom-btn-alt {
         padding: 5px 10px;
@@ -274,10 +299,26 @@
         padding: 50px 20px;
     }
     .page-banner-text h1 {
-        font-size: 30px;
+        font-size: 24px;
+        margin-top: 2px;
     }
     .car-price {
         margin-top: 10px;
+    }
+    .about-content h2 {
+        font-size: 25px;
+    }
+    .occassion-nav button {
+        padding: 15px 30px;
+    }
+    .occassions-tab {
+        justify-content: center;
+    }
+    .page-banner {
+        height: 200px;
+    }
+    .page-banner-text p {
+        font-size: 15px;
     }
 }
 
@@ -297,5 +338,8 @@
     }
     .car-name-cat p {
         font-size: 12px;
+    }
+    .custom-btn-alt {
+        padding: 5px 7px;
     }
 }
