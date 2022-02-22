@@ -25,6 +25,12 @@ $(".filter-m-button").click(function() {
 $(".remove-filter").click(function() {
     $(".filter-area").removeClass("active");
 });
+
+// =========================filter mobile ===============
+$(".filter-dp-manu").click(function() {
+    // $(".filter-dp-manu").removeClass("active");
+    $(this).toggleClass("active");
+});
 // ================occastion=============
 var swiper = new Swiper(".occastion-slider", {
     slidesPerView: 1,

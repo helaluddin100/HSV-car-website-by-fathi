@@ -65,6 +65,20 @@
         border-top: none;
         padding-top: 0;
     }
+    ul.filter-menu {
+        position: relative;
+        display: none;
+        margin-top: 0px;
+        z-index: 9;
+        opacity: 1;
+        visibility: visible;
+    }
+    .filter-dp-manu.active .filter-menu {
+        display: block;
+    }
+    ul.filter-menu.hero-filter {
+        position: absolute;
+    }
 }
 
 @media screen and (max-width:992px) {
@@ -97,13 +111,14 @@
         display: block;
         background: var(--white-color);
         padding: 60px 0;
-        height: 91vh;
+        height: 94vh;
         position: fixed;
         z-index: 99;
         left: -100%;
         top: 0;
         bottom: 0;
         transition: .3s;
+        overflow-y: auto;
     }
     .filter-col-5.se-border::before,
     .filter-col-5.se-border::after {
@@ -218,6 +233,9 @@
     }
     .button-al {
         padding-left: 0px;
+    }
+    .box {
+        margin-bottom: 13px;
     }
 }
 
