@@ -226,7 +226,7 @@ label {
 }
 
 h2.occasion-title {
-    font-size: 40px;
+    font-size: 36px;
     line-height: 55px;
     font-weight: 400;
     color: #002A3A;
@@ -306,7 +306,8 @@ p.model {
 
 p.ml-text {
     font-size: 13px;
-    color: #939393;
+    color: #002A3A;
+    opacity: 0.5;
 }
 
 p.st-text {
@@ -490,7 +491,7 @@ p.dealer-name:after {
 /* ====================================SERVICE ============== */
 
 .service-card {
-    background: #ebedee78;
+    background: #EBEDEE;
     padding: 55px 35px;
     transition: .3s;
 }
@@ -552,7 +553,9 @@ p.service-des {
 ul.url-list {
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 12px;
+    color: #002A3A;
+    opacity: 0.5;
 }
 
 .url-link {
@@ -752,8 +755,10 @@ a.filter-t-link:hover {
     padding-top: 5px;
     display: block;
     font-family: var(--normal-font);
-    color: #939393;
     font-size: 12px;
+    color: #002A3A;
+    opacity: 0.5;
+    font-weight: 500;
 }
 
 .car-s-info {
@@ -817,7 +822,9 @@ a.filter-t-link:hover {
     text-transform: uppercase;
     font-family: var(--normal-font);
     font-weight: 500;
-    color: var(--text-color-alt);
+    color: #002A3A;
+    opacity: 0.2;
+    font-size: 12px;
 }
 
 .car-price h2 {
@@ -827,7 +834,9 @@ a.filter-t-link:hover {
 
 .car-name-cat p {
     font-family: var(--normal-font);
-    color: #838383;
+    color: #002A3A;
+    opacity: 0.5;
+    font-weight: 500;
 }
 
 .car-name-cat h2 {
@@ -903,26 +912,30 @@ a.filter-t-link:hover {
     position: relative;
     display: block;
     /* transition: .3s; */
+    color: #868E96;
 }
 
 .feature-listing-tab.active:before {
     content: "";
-    height: 3px;
+    height: 0;
     position: absolute;
     width: 100%;
     display: block;
     background: var(--main-color);
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     right: 0;
+    border-bottom: 3px solid var(--main-color);
 }
 
 .feature-listing-tab.active {
-    font-weight: bold;
+    font-weight: 700;
+    color: var(--second-color);
 }
 
 .feature-listing-tab:hover {
     font-weight: bold;
+    color: var(--second-color);
 }
 
 ul.feature-list li::marker {
@@ -938,7 +951,8 @@ ul.feature-list li {
     position: relative;
     display: flex;
     align-items: center;
-    color: #002a3aa8;
+    color: #002A3A;
+    opacity: 0.56;
 }
 
 ul.feature-list li:before {
@@ -962,6 +976,8 @@ p.comment-message {
 
 .comment {
     margin-top: 40px;
+    color: #002A3A;
+    opacity: 0.56;
 }
 
 .related-car {
@@ -1093,13 +1109,16 @@ h2.page-title {
     font-size: 24px;
     text-transform: uppercase;
     margin-bottom: 15px;
+    font-weight: 400;
 }
 
 .page-content p {
     font-family: var(--normal-font);
     font-size: 14px;
     line-height: 24px;
-    color: #606060;
+    font-weight: 400;
+    color: #002A3A;
+    opacity: 0.7;
 }
 
 .form-control:focus {
@@ -1110,15 +1129,18 @@ h2.page-title {
 .form-control {
     padding: 15px;
     border-radius: 0;
+    font-family: var(--title-font);
+    border: solid 1px #e8e8e8;
 }
 
 .select-input {
     border-radius: 0;
-    padding: 7px 15px;
+    padding: 5.5px 15px;
     height: auto;
     text-transform: uppercase;
     color: #747474;
-    font-size: 16px;
+    font-size: 14px;
+    font-family: var(--title-font);
 }
 
 .select-input:focus {
@@ -1150,6 +1172,9 @@ h2.page-title {
 
 .form-head h5 {
     font-size: 14px;
+    font-family: var(--title-font);
+    font-weight: 400;
+    display: block;
 }
 
 .form-submit-area {
@@ -1167,9 +1192,11 @@ button.submit-btn {
     padding: 10px;
     color: var(--white-color);
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
     transition: .3s;
     border: 2px solid var(--main-color);
+    font-size: 14px;
+    font-family: var(--title-font);
 }
 
 button.submit-btn:hover {
@@ -1179,7 +1206,8 @@ button.submit-btn:hover {
 
 .requerd-type {
     font-size: 12px;
-    color: #787878;
+    color: #333333;
+    opacity: 0.5;
 }
 
 

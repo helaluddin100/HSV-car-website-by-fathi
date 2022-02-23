@@ -278,7 +278,8 @@ ul.address-ul li a {
 }
 
 tbody.shedul-table {
-    color: #9f9f9f;
+    color: #002A3A;
+    opacity: 0.6;
 }
 
 .last-footer {
@@ -307,7 +308,7 @@ tbody.shedul-table {
 }
 
 a.social-link {
-    padding: 10px 13px;
+    padding: 10px 15px;
 }
 
 img.barnd-img {
@@ -328,6 +329,15 @@ a.back-link {
 
 a.back-link:hover {
     color: var(--main-color);
+}
+
+a.social-link svg {
+    fill: var(--main-color);
+    transition: .3s;
+}
+
+a.social-link:hover svg {
+    fill: var(--second-color);
 }
 
 img.footer-map {
@@ -507,4 +517,8 @@ tbody.shedul-table tr td {
 
 .collapse:not(.show) {
     display: grid;
+}
+
+.copy-sec p {
+    color: #002a3a99;
 }

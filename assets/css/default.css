@@ -154,7 +154,7 @@ table.table {
     background: var(--text-color);
     padding: 6px 15px;
     /* border-radius: 4px; */
-    font-size: 13px;
+    font-size: 11px;
     text-transform: uppercase;
     color: var(--white-color);
     transition: .3s;
@@ -163,6 +163,8 @@ table.table {
     -ms-transition: .3s;
     -o-transition: .3s;
     border: 2px solid var(--text-color);
+    font-weight: 600;
+    font-family: var(--normal-font);
 }
 
 .custom-btn-alt:hover {
