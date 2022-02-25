@@ -536,3 +536,9 @@ a.company-by {
 a.company-by:hover {
     color: var(--main-color);
 }
+
+.under-map {
+    color: var(--text-color);
+    transition: .3s;
+    font-family: var(--normal-font);
+}

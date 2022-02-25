@@ -419,7 +419,8 @@ img.dealer-product-img {
 }
 
 .contact-btn img {
-    margin-left: 10px;
+    margin-left: 10px !important;
+    margin-right: 0 !important;
 }
 
 .info-inner {
@@ -1282,6 +1283,10 @@ button.submit-btn:hover {
     font-size: 18px;
 }
 
+a.contact-text:hover p {
+    color: var(--main-color);
+}
+
 .contact-text img {
     margin-right: 10px;
 }
@@ -1383,6 +1388,7 @@ span.area-name {
 
 .contact-text p {
     color: var(--text-color);
+    transition: .3s;
 }
 
 @media screen and (max-width:991px) {

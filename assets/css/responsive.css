@@ -20,6 +20,12 @@
     }
 }
 
+@media screen and (max-width:1350px) {
+    .banner-content-wrapper {
+        height: 570px;
+    }
+}
+
 @media screen and (max-width:1300px) {
     .dealer-info {
         padding: 0px 60px;
@@ -27,6 +33,9 @@
 }
 
 @media screen and (max-width:1150px) {
+    .banner-img {
+        width: 48%;
+    }
     .rating-review {
         display: none;
     }
@@ -104,6 +113,9 @@
 }
 
 @media screen and (max-width:992px) {
+    .banner-img {
+        display: none;
+    }
     .filter-m-button {
         display: flex
     }
@@ -166,9 +178,6 @@
     }
     .filter-col-5:nth-child(3)::after,
     .filter-col-5:nth-child(5)::after {
-        display: none;
-    }
-    .banner-img {
         display: none;
     }
     .banner-content-wrapper {
