@@ -1,3 +1,9 @@
+@media screen and (min-width:3200px) {
+    .banner-img {
+        width: 48% !important;
+    }
+}
+
 @media screen and (min-width:1600px) {
     .banner-img {
         position: absolute;
@@ -222,6 +228,9 @@
 }
 
 @media screen and (max-width:650px) {
+    .occasion-title-m {
+        font-size: 25px;
+    }
     .occastion-head {
         display: block;
     }

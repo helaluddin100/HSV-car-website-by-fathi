@@ -175,11 +175,11 @@ ul.menu-ul {
 
 .nav-link {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--text-color);
     transition: .3s;
     font-family: var(--title-font);
-    padding: 0 20px;
+    padding: 0 27px;
 }
 
 .nav-link.active {
@@ -292,7 +292,7 @@ tbody.shedul-table {
 }
 
 .copy-sec h5 {
-    font-size: 14px;
+    font-size: 14px !important;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -521,4 +521,18 @@ tbody.shedul-table tr td {
 
 .copy-sec p {
     color: #002a3a99;
+}
+
+a.back-link img {
+    margin-left: 5px;
+}
+
+a.company-by {
+    color: #002a3a99;
+    transition: .3s;
+    font-family: var(--normal-font);
+}
+
+a.company-by:hover {
+    color: var(--main-color);
 }

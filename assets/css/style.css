@@ -6,7 +6,7 @@
 }
 
 h4.sm-title {
-    font-size: clamp(16px, 2vw, 23px);
+    font-size: clamp(16px, 2vw, 18px);
     color: #B6DCE1;
     font-family: var(--title-font);
     margin-bottom: 15px;
@@ -18,7 +18,7 @@ h4.sm-title {
 }
 
 h1.title {
-    font-size: clamp(30px, 5vw, 55px);
+    font-size: clamp(30px, 5vw, 52px);
     color: var(--white-color);
     font-family: var(--title-font);
     /* line-height: 70px; */
@@ -58,7 +58,7 @@ h1.title {
 
 .filter-nav.active {
     background: var(--white-color) !important;
-    color: var(--text-color) !important;
+    color: #000000 !important;
 }
 
 .border-padding-less {
@@ -226,7 +226,7 @@ label {
 }
 
 h2.occasion-title {
-    font-size: 36px;
+    font-size: 44px;
     line-height: 55px;
     font-weight: 400;
     color: #002A3A;
@@ -284,7 +284,8 @@ p.model {
     font-family: var(--normal-font);
     margin-left: 20px;
     font-weight: 500;
-    color: #959595;
+    color: #002A3A;
+    opacity: 0.5;
 }
 
 .service-details {
@@ -311,7 +312,7 @@ p.ml-text {
 }
 
 p.st-text {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .car-information {
@@ -439,6 +440,7 @@ p.sm-title {
     font-weight: 700;
     color: var(--main-color);
     text-transform: uppercase;
+    font-family: var(--title-font);
 }
 
 h2.dealer-title {
@@ -491,9 +493,17 @@ p.dealer-name:after {
 /* ====================================SERVICE ============== */
 
 .service-card {
-    background: #EBEDEE;
+    background: #ebedee6e;
     padding: 55px 35px;
     transition: .3s;
+}
+
+.occasion-title-m {
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 400;
+    color: #002A3A;
+    text-transform: uppercase;
 }
 
 .service-icon {
@@ -511,7 +521,8 @@ p.service-title {
 
 p.service-des {
     font-family: var(--normal-font);
-    color: #002a3ab8;
+    color: #002A3A;
+    opacity: 0.6;
 }
 
 .service-icon img {
@@ -541,6 +552,8 @@ p.service-des {
 .page-banner-text h1 {
     font-size: 40px;
     margin-top: 3px;
+    font-family: var(--title-font);
+    font-weight: 400;
 }
 
 
@@ -972,12 +985,12 @@ ul.feature-list li:before {
 
 p.comment-message {
     margin-bottom: 15px;
+    color: #002A3A;
+    opacity: 0.56;
 }
 
 .comment {
     margin-top: 40px;
-    color: #002A3A;
-    opacity: 0.56;
 }
 
 .related-car {
@@ -1026,7 +1039,7 @@ h5.s-title {
 .about-content h2 {
     font-size: 36px;
     text-transform: uppercase;
-    color: var(--second-color);
+    color: var(--text-color);
     margin: 12px 0;
 }
 
@@ -1070,6 +1083,27 @@ a.name {
     text-transform: uppercase;
 }
 
+.comment-date-info p {
+    color: #002A3A;
+    opacity: 0.56;
+}
+
+p.address {
+    color: #002A3A;
+    opacity: 0.56;
+}
+
+@media screen and (max-width: 991px) {
+    .comment-date-info p {
+        color: #002A3A;
+        opacity: 0.56;
+    }
+    p.address {
+        color: #002A3A;
+        opacity: 0.56;
+    }
+}
+
 a.name:hover {
     color: var(--main-color);
 }
@@ -1110,6 +1144,8 @@ h2.page-title {
     text-transform: uppercase;
     margin-bottom: 15px;
     font-weight: 400;
+    color: var(--text-color);
+    font-family: var(--title-font);
 }
 
 .page-content p {
@@ -1138,9 +1174,10 @@ h2.page-title {
     padding: 5.5px 15px;
     height: auto;
     text-transform: uppercase;
-    color: #747474;
     font-size: 14px;
     font-family: var(--title-font);
+    /* color: #333333; */
+    /* opacity: 0.5; */
 }
 
 .select-input:focus {
@@ -1225,13 +1262,14 @@ button.submit-btn:hover {
 
 .page-banner-text h2 {
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 40px;
 }
 
 .page-banner-text p {
     color: #B6DCE1;
     font-size: 14px;
+    margin-bottom: 0;
 }
 
 
@@ -1250,7 +1288,7 @@ button.submit-btn:hover {
 
 p.contact-title {
     margin: 20px 0;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: bold;
 }
 
@@ -1272,14 +1310,15 @@ p.contact-title {
 span.area-name {
     display: block;
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    color: #828282;
 }
 
 .contact-location {
     background: var(--white-color);
     box-shadow: 0px 1px 108px 1px #e7e7e7;
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 6px;
     display: flex;
     align-items: center;
     margin-top: 40px;
@@ -1291,13 +1330,14 @@ span.area-name {
 
 .get-in-tuch h1 {
     font-size: 60px;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 36px;
 }
 
 .form-title {
     display: flex;
     align-items: center;
+    margin-bottom: 35px;
 }
 
 .form-title img {
@@ -1316,9 +1356,9 @@ span.area-name {
 
 .submit-contact {
     width: 100%;
-    background: var(--second-color);
+    background: var(--text-color);
     padding: 12px;
-    border: 2px solid var(--second-color);
+    border: 2px solid var(--text-color);
     color: var(--white-color);
     font-size: 16px;
     text-transform: uppercase;
@@ -1328,16 +1368,27 @@ span.area-name {
 
 .submit-contact:hover {
     background: var(--white-color);
-    color: var(--second-color);
+    color: var(--text-color);
 }
 
 .form-group label {
     margin-bottom: 10px;
+    font-size: 14px;
 }
 
 .contact-content {
     height: 100%;
     padding-top: 30px;
+}
+
+.contact-text p {
+    color: var(--text-color);
+}
+
+@media screen and (max-width:991px) {
+    .contact-text p {
+        color: var(--text-color);
+    }
 }
 
 
@@ -1371,4 +1422,44 @@ img.calendar-img {
     display: flex;
     align-items: center;
     position: relative;
+}
+
+.form-control::placeholder {
+    color: #333333;
+    opacity: 0.5;
+}
+
+.nice-select:after {
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
+}
+
+.nice-select.select-input span {
+    color: #333333;
+    opacity: 0.5;
+}
+
+.nice-select.select-input ul li {
+    color: #333333;
+    opacity: 0.5 !important;
+}
+
+.location-info {
+    color: #4F4F4F;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.form-title h2 {
+    font-weight: 700;
+    color: #4F4F4F;
+}
+
+.form-control:focus {
+    box-shadow: 0px 14px 54px -13px rgba(41, 58, 79, 0.15);
+}
+
+.team-info p {
+    color: #002A3A;
+    opacity: 0.7;
 }
