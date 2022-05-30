@@ -7,7 +7,7 @@
 
 h4.sm-title {
     font-size: clamp(16px, 2vw, 18px);
-    color: #B6DCE1;
+    color: #b6dce1;
     font-family: var(--title-font);
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -51,7 +51,7 @@ h1.title {
 
 .filter-nav {
     background-color: #f1f0f0 !important;
-    color: #868E96;
+    color: #868e96;
     padding: 10px 30px;
     border-radius: 0 !important;
 }
@@ -80,7 +80,7 @@ label {
 
 .dropdown-toggle::after,
 .nice-select.cs-arrow:after {
-    content: '';
+    content: "";
     display: block;
     height: 5px;
     margin-top: -4px;
@@ -167,7 +167,7 @@ label {
 }
 
 .dealer-section {
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
 }
 
 
@@ -206,7 +206,7 @@ label {
 }
 
 .occastion {
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
 }
 
 .occastion-head {
@@ -229,7 +229,7 @@ h2.occasion-title {
     font-size: 44px;
     line-height: 55px;
     font-weight: 400;
-    color: #002A3A;
+    color: #002a3a;
     text-transform: uppercase;
 }
 
@@ -242,7 +242,7 @@ h2.occasion-title {
     background: none;
     padding: 15px 40px;
     border-bottom: 3px solid var(--white-color);
-    color: #868E96;
+    color: #868e96;
 }
 
 .occassion-nav button.active {
@@ -256,7 +256,7 @@ h2.occasion-title {
 
 .slider-img {
     width: 100%;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .model-price {
@@ -284,7 +284,7 @@ p.model {
     font-family: var(--normal-font);
     margin-left: 20px;
     font-weight: 500;
-    color: #002A3A;
+    color: #002a3a;
     opacity: 0.5;
 }
 
@@ -307,7 +307,7 @@ p.model {
 
 p.ml-text {
     font-size: 13px;
-    color: #002A3A;
+    color: #002a3a;
     opacity: 0.5;
 }
 
@@ -344,11 +344,11 @@ p.st-text {
 }
 
 .bg-anakiwa {
-    background: #86E9FF;
+    background: #86e9ff;
 }
 
 .bg-salomie {
-    background: #FFDD86;
+    background: #ffdd86;
 }
 
 
@@ -379,7 +379,7 @@ img.slider-img:before {
     justify-content: center;
     align-items: center;
     background: var(--main-color);
-    transition: .3s;
+    transition: 0.3s;
     opacity: 0;
     visibility: hidden;
     bottom: 0;
@@ -403,7 +403,7 @@ img.dealer-product-img {
 .contact-btn {
     color: var(--white-color);
     font-size: 13px;
-    transition: .3s;
+    transition: 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -432,7 +432,7 @@ img.dealer-product-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #EBEDEE;
+    background: #ebedee;
     padding: 0 80px;
 }
 
@@ -496,14 +496,14 @@ p.dealer-name:after {
 .service-card {
     background: #ebedee6e;
     padding: 55px 35px;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .occasion-title-m {
     font-size: 36px;
     line-height: 45px;
     font-weight: 400;
-    color: #002A3A;
+    color: #002a3a;
     text-transform: uppercase;
 }
 
@@ -522,7 +522,7 @@ p.service-title {
 
 p.service-des {
     font-family: var(--normal-font);
-    color: #002A3A;
+    color: #002a3a;
     opacity: 0.6;
 }
 
@@ -568,13 +568,13 @@ ul.url-list {
     display: flex;
     align-items: center;
     font-size: 12px;
-    color: #002A3A;
+    color: #002a3a;
     opacity: 0.5;
 }
 
 .url-link {
     color: var(--text-color);
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .url-link:hover {
@@ -600,7 +600,7 @@ ul.url-list {
 }
 
 .bg-wrap {
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
 }
 
 .nav-link:focus,
@@ -625,12 +625,12 @@ ul.url-list {
 
 .radio {}
 
-.radio input[type=radio] {
+.radio input[type="radio"] {
     position: absolute;
     opacity: 0;
 }
 
-.radio input[type=radio]+.radio-label:before {
+.radio input[type="radio"]+.radio-label:before {
     content: "";
     border-radius: 100%;
     border: 1px solid var(--second-color);
@@ -638,31 +638,31 @@ ul.url-list {
     width: 18px;
     height: 18px;
     position: relative;
-    margin-right: .8em;
+    margin-right: 0.8em;
     vertical-align: top;
     cursor: pointer;
     text-align: center;
     transition: all 250ms ease;
 }
 
-.radio input[type=radio]:checked+.radio-label:before {
+.radio input[type="radio"]:checked+.radio-label:before {
     background-color: var(--main-color);
     box-shadow: inset 0 0 0 4px #f4f4f4;
     border-color: var(--main-color);
 }
 
-.radio input[type=radio]:focus+.radio-label:before {
+.radio input[type="radio"]:focus+.radio-label:before {
     outline: none;
     border-color: var(--main-color);
 }
 
-.radio input[type=radio]:disabled+.radio-label:before {
+.radio input[type="radio"]:disabled+.radio-label:before {
     box-shadow: inset 0 0 0 4px #f4f4f4;
     border-color: #b4b4b4;
     background: #b4b4b4;
 }
 
-.radio input[type=radio]+.radio-label:empty:before {
+.radio input[type="radio"]+.radio-label:empty:before {
     margin-right: 0;
 }
 
@@ -676,7 +676,7 @@ ul.filter-menu {
     z-index: 9;
     opacity: 0;
     visibility: hidden;
-    transition: .3s;
+    transition: 0.3s;
     border-top: 1px solid #cbcbcb;
 }
 
@@ -704,7 +704,7 @@ ul.filter-menu {
     border-color: var(--main-color);
 }
 
-.form-check-input[type=radio] {
+.form-check-input[type="radio"] {
     border-radius: 30%;
 }
 
@@ -735,7 +735,7 @@ a.filter-t-link {
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
     display: block;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .filter-menu li:last-child a {
@@ -770,7 +770,7 @@ a.filter-t-link:hover {
     display: block;
     font-family: var(--normal-font);
     font-size: 12px;
-    color: #002A3A;
+    color: #002a3a;
     opacity: 0.5;
     font-weight: 500;
 }
@@ -785,7 +785,7 @@ a.filter-t-link:hover {
 .thumb-sl-btn:after {
     font-size: 20px;
     color: var(--white-color);
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .main-sl-btn:after {
@@ -797,7 +797,7 @@ a.filter-t-link:hover {
     width: 40px;
     height: 40px;
     background: var(--main-color);
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .main-sl-btn:hover {
@@ -836,7 +836,7 @@ a.filter-t-link:hover {
     text-transform: uppercase;
     font-family: var(--normal-font);
     font-weight: 500;
-    color: #002A3A;
+    color: #002a3a;
     opacity: 0.2;
     font-size: 12px;
 }
@@ -848,7 +848,7 @@ a.filter-t-link:hover {
 
 .car-name-cat p {
     font-family: var(--normal-font);
-    color: #002A3A;
+    color: #002a3a;
     opacity: 0.5;
     font-weight: 500;
 }
@@ -891,7 +891,7 @@ a.filter-t-link:hover {
     text-transform: uppercase;
     font-weight: 600;
     color: var(--main-color);
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .alt-btn:hover {
@@ -926,7 +926,7 @@ a.filter-t-link:hover {
     position: relative;
     display: block;
     /* transition: .3s; */
-    color: #868E96;
+    color: #868e96;
 }
 
 .feature-listing-tab.active:before {
@@ -965,7 +965,7 @@ ul.feature-list li {
     position: relative;
     display: flex;
     align-items: center;
-    color: #002A3A;
+    color: #002a3a;
     opacity: 0.56;
 }
 
@@ -986,7 +986,7 @@ ul.feature-list li:before {
 
 p.comment-message {
     margin-bottom: 15px;
-    color: #002A3A;
+    color: #002a3a;
     opacity: 0.56;
 }
 
@@ -1012,7 +1012,7 @@ p.comment-message {
     justify-content: center;
     font-size: 20px;
     color: var(--white-color);
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .related-product-nav div.swiper-button-disabled {
@@ -1080,27 +1080,27 @@ a.name {
     font-size: 18px;
     font-weight: 600;
     color: var(--second-color);
-    transition: .3s;
+    transition: 0.3s;
     text-transform: uppercase;
 }
 
 .comment-date-info p {
-    color: #002A3A;
+    color: #002a3a;
     opacity: 0.56;
 }
 
 p.address {
-    color: #002A3A;
+    color: #002a3a;
     opacity: 0.56;
 }
 
 @media screen and (max-width: 991px) {
     .comment-date-info p {
-        color: #002A3A;
+        color: #002a3a;
         opacity: 0.56;
     }
     p.address {
-        color: #002A3A;
+        color: #002a3a;
         opacity: 0.56;
     }
 }
@@ -1118,11 +1118,11 @@ img.member-img {
 }
 
 .team-section {
-    background: #F7F7F7;
+    background: #f7f7f7;
 }
 
 .team-card {
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .team-card:hover {
@@ -1154,7 +1154,7 @@ h2.page-title {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
-    color: #002A3A;
+    color: #002a3a;
     opacity: 0.7;
 }
 
@@ -1231,7 +1231,7 @@ button.submit-btn {
     color: var(--white-color);
     text-transform: uppercase;
     font-weight: 700;
-    transition: .3s;
+    transition: 0.3s;
     border: 2px solid var(--main-color);
     font-size: 14px;
     font-family: var(--title-font);
@@ -1268,7 +1268,7 @@ button.submit-btn:hover {
 }
 
 .page-banner-text p {
-    color: #B6DCE1;
+    color: #b6dce1;
     font-size: 14px;
     margin-bottom: 0;
 }
@@ -1356,7 +1356,7 @@ span.area-name {
 }
 
 .contact-area {
-    background: #F7F7F7;
+    background: #f7f7f7;
 }
 
 .submit-contact {
@@ -1367,7 +1367,7 @@ span.area-name {
     color: var(--white-color);
     font-size: 16px;
     text-transform: uppercase;
-    transition: .3s;
+    transition: 0.3s;
     font-weight: 800;
 }
 
@@ -1388,10 +1388,10 @@ span.area-name {
 
 .contact-text p {
     color: var(--text-color);
-    transition: .3s;
+    transition: 0.3s;
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width: 991px) {
     .contact-text p {
         color: var(--text-color);
     }
@@ -1451,14 +1451,14 @@ img.calendar-img {
 }
 
 .location-info {
-    color: #4F4F4F;
+    color: #4f4f4f;
     font-size: 15px;
     font-weight: 700;
 }
 
 .form-title h2 {
     font-weight: 700;
-    color: #4F4F4F;
+    color: #4f4f4f;
 }
 
 .form-control:focus {
@@ -1466,6 +1466,38 @@ img.calendar-img {
 }
 
 .team-info p {
-    color: #002A3A;
+    color: #002a3a;
     opacity: 0.7;
+}
+
+
+/* ====================latest update================== */
+
+.hero-filter-dp {
+    width: 100%;
+    border: none;
+    padding-left: 0;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.hero-filter-dp ul.list li {
+    border-bottom: 1px solid #ddd;
+}
+
+.hero-filter-dp ul {
+    width: 100%;
+}
+
+.nice-select.hero-filter-dp:after {
+    width: 10px;
+    background-image: url(../img/icon/down.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 10px;
+    border: none !important;
+    transform: rotate(0deg);
 }
